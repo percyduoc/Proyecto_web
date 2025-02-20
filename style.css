@@ -1,0 +1,179 @@
+/* navbar  */
+.nav-link {
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.nav-link:hover {
+    text-decoration: none; /* Quitar subrayado al hacer hover */
+    color: #007bff; /* Cambiar color de texto */
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño del enlace */
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra sutil en hover */
+}   
+
+/* cambiar el color de los botnes del carousel */
+
+
+span.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #5f5555; /* Color de fondo */
+    border-radius: 50%; /* Forma redondeada */
+    color: rgb(248, 15, 15); /* Color del icono */
+
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: #000000; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del icono */
+}
+
+
+/* carusel contactanos  */
+.review .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+ }
+ .review .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+ }
+ .review .carousel-inner {
+    border-radius: 10px;
+ }
+ 
+#ourwork-img {
+    width: 400px;
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+#footer {
+    margin: 0;
+    background-color: #1E3A8A; /* Azul oscuro (bg-blue-900) */
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Fuente futurista para los títulos */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Fuente moderna para botones o elementos destacados */
+button, .highlight-text {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+
+ 
+
+
+
+
+
+/* REGLA PARA PANTALLA escritorio  */
+@media (min-width: 992px) {
+    #carouselExampleCaptions{
+        margin-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+
+
+    }
+    #carousel-indicators button {
+       color: black;
+
+    }
+    #carusel-img {
+        width: 75%;
+        max-height: 900px;
+     
+        object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    }
+    
+    
+}
+    
+
+
+
+
+/* animacion foooter */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('https://www.transparenttextures.com/patterns/white-wave.png'); /* Patrón de olas */
+    background-size: 2000px 120px;
+    animation: moveWaves 8s linear infinite;
+    opacity: 0.3; /* Transparencia para que no opaque el contenido */
+}
+
+@keyframes moveWaves {
+    from { background-position-x: 0; }
+    to { background-position-x: 2000px; }
+}
+/* inicio  */
+        /* Estilos para el menú slider */
+        #menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        #menu.active {
+            transform: translateX(0);
+        }
+
+        /* Animaciones para servicios */
+        .service-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .service-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* stilo de inicio  */
+        
+      .typewriter {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .cursor {
+        display: inline-block;
+        width: 3px;
+        background-color: #272222;
+        animation: blink 0.7s infinite;
+        margin-left: 5px;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
